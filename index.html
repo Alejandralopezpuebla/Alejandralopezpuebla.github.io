@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>En construcción</title>
     <style>
         body {
             display: flex;
@@ -21,9 +21,36 @@
             font-size: 1.5rem;
             color: #333;
         }
+        .lang-select {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
     </style>
 </head>
 <body>
-    <div class="message">This site is under construction.</div>
+    <div class="lang-select">
+        <select id="lang" onchange="changeLang()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="mp">Mapuzungun</option>
+        </select>
+    </div>
+    <div class="message" id="msg">Esta página está en construcción.</div>
+</body>
+    <script>
+        const messages = {
+            es: "Esta página está en construcción.",
+            en: "This site is under construction.",
+            ar: "هذا الموقع تحت الإنشاء.",
+            mp: "Tañi ruka kimün mew müley."
+        };
+        function changeLang() {
+            const lang = document.getElementById('lang').value;
+            document.getElementById('msg').textContent = messages[lang];
+        }
+    </script>
+</body>
 </body>
 </html>
