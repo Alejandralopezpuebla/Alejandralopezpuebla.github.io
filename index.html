@@ -65,19 +65,26 @@
         }
         .bio {
             position: fixed;
-            left: 2rem;
+            left: calc(2rem + 1cm);
             top: 2rem;
             color: black;
-            font-size: 10px;
             font-family: 'Georgia', serif;
-            max-width: 250px;
-            line-height: 1.4;
+            max-width: calc(50vw - 2rem - 1cm);
             background: #fff;
             padding: 1rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             overflow-y: auto;
             max-height: calc(100vh - 4rem);
+        }
+        .name {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .bio-text {
+            font-size: 10px;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -91,7 +98,8 @@
         </select>
     </div>
     <div class="bio">
-        <p>Alejandra López Puebla. Periodista (Universidad de La Serena, Chile), especializada en Investigación y Guión de Cine Documental en Argentina (ENERC y Guionarte), Realización de Documentales en Cuba (EICTV) y Teoría y Práctica del Documental Creativo en España (Universidad Autónoma de Barcelona). En las artes en vivo se formó en Dramaturgia en Argentina (Enerc, Arjé) y en Escena y Tecnología Digital en España (Institut del Teatre de Barcelona). Es una de las fundadoras de la Organización Sin Fines de Lucro "Colectiva Varias", que articula a las Mujeres y Disidencias Audiovisuales de la Región de Coquimbo, Chile. También es una de las directoras de la Compañía de Teatro "Didascalia y Viceversa", con la cual ha circulado en Chile, Argentina y Uruguay. Sus trabajos de cine, teatro y videoinstalación exploran las intersecciones entre lo social y lo íntimo desde los espacios que separan y unen el cine/teatro y lo analógico/digital. Ha sido seleccionada en instancias nacionales e internacionales, destacando Aricadoc, Vórtice, BoliviaLab, Femcine, Documenta Sur, Conecta, Arca, Cine en el Borde de la Corporación Chilena de Video y Artes electrónicas, Docsbarcelona, Doxs!, IDFA, entre otros. Actualmente se encuentra trabajando en la video instalación "Milanka" y en los documentales "Anaís" y "La Reja Abierta".</p>
+        <p class="name">Alejandra López Puebla</p>
+        <p class="bio-text">Periodista (Universidad de La Serena, Chile), especializada en Investigación y Guión de Cine Documental en Argentina (ENERC y Guionarte), Realización de Documentales en Cuba (EICTV) y Teoría y Práctica del Documental Creativo en España (Universidad Autónoma de Barcelona). En las artes en vivo se formó en Dramaturgia en Argentina (Enerc, Arjé) y en Escena y Tecnología Digital en España (Institut del Teatre de Barcelona). Es una de las fundadoras de la Organización Sin Fines de Lucro "Colectiva Varias", que articula a las Mujeres y Disidencias Audiovisuales de la Región de Coquimbo, Chile. También es una de las directoras de la Compañía de Teatro "Didascalia y Viceversa", con la cual ha circulado en Chile, Argentina y Uruguay. Sus trabajos de cine, teatro y videoinstalación exploran las intersecciones entre lo social y lo íntimo desde los espacios que separan y unen el cine/teatro y lo analógico/digital. Ha sido seleccionada en instancias nacionales e internacionales, destacando Aricadoc, Vórtice, BoliviaLab, Femcine, Documenta Sur, Conecta, Arca, Cine en el Borde de la Corporación Chilena de Video y Artes electrónicas, Docsbarcelona, Doxs!, IDFA, entre otros. Actualmente se encuentra trabajando en la video instalación "Milanka" y en los documentales "Anaís" y "La Reja Abierta".</p>
     </div>
     <div class="message" id="msg">
         <span style="vertical-align:middle; margin-right:8px;">
