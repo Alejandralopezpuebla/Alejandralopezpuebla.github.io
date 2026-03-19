@@ -83,14 +83,43 @@
             font-size: 13px;
             line-height: 1.4;
         }
-        .formation {
-            font-size: 10px;
-            line-height: 1.4;
-            margin-top: 1rem;
+        .bauhaus-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .bauhaus-bg circle {
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { r: 30; }
+            50% { r: 35; }
         }
     </style>
 </head>
 <body>
+    <div class="bauhaus-bg">
+        <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bauhaus-inspired minimalist connecting lines -->
+            <line x1="100" y1="100" x2="900" y2="100" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="100" x2="100" y2="900" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="900" x2="900" y2="900" stroke="black" stroke-width="2"/>
+            <line x1="900" y1="100" x2="900" y2="900" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="100" x2="500" y2="500" stroke="black" stroke-width="2"/>
+            <line x1="500" y1="500" x2="900" y2="100" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="900" x2="500" y2="500" stroke="black" stroke-width="2"/>
+            <line x1="500" y1="500" x2="900" y2="900" stroke="black" stroke-width="2"/>
+            <circle cx="500" cy="500" r="50" fill="none" stroke="black" stroke-width="2"/>
+            <circle cx="200" cy="200" r="30" fill="none" stroke="black" stroke-width="2"/>
+            <circle cx="800" cy="200" r="30" fill="none" stroke="black" stroke-width="2"/>
+            <circle cx="200" cy="800" r="30" fill="none" stroke="black" stroke-width="2"/>
+            <circle cx="800" cy="800" r="30" fill="none" stroke="black" stroke-width="2"/>
+        </svg>
+    </div>
     <div class="bio">
         <p class="name">Alejandra López Puebla</p>
         <p class="bio-text">Periodista (Universidad de La Serena, Chile), especializada en Investigación y Guión de Cine Documental en Argentina (ENERC y Guionarte), Realización de Documentales en Cuba (EICTV) y Teoría y Práctica del Documental Creativo en España (Universidad Autónoma de Barcelona). En las artes en vivo se formó en Dramaturgia en Argentina (Enerc, Arjé) y en Escena y Tecnología Digital en España (Institut del Teatre de Barcelona). Es una de las fundadoras de la Organización Sin Fines de Lucro "Colectiva Varias", que articula a las Mujeres y Disidencias Audiovisuales de la Región de Coquimbo, Chile. También es una de las directoras de la Compañía de Teatro "Didascalia y Viceversa", con la cual ha circulado en Chile, Argentina y Uruguay. Sus trabajos de cine, teatro y videoinstalación exploran las intersecciones entre lo social y lo íntimo desde los espacios que separan y unen el cine/teatro y lo analógico/digital. Ha sido seleccionada en instancias nacionales e internacionales, destacando Aricadoc, Vórtice, BoliviaLab, Femcine, Documenta Sur, Conecta, Arca, Cine en el Borde de la Corporación Chilena de Video y Artes electrónicas, Docsbarcelona, Doxs!, IDFA, entre otros. Actualmente se encuentra trabajando en la video instalación "Milanka" y en los documentales "Anaís" y "La Reja Abierta".</p>
