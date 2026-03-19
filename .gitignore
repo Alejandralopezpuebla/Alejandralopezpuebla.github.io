@@ -1,0 +1,72 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# macOS Spotlight files
+.Spotlight-V100
+
+# macOS Trash files
+.Trashes
+
+# macOS Disk images
+*.dmg
+
+# HTML build artifacts (if any)
+*.html
+
+# Node modules (if using JS/TS)
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# VS Code settings
+.vscode/
+
+# Other common files
+Thumbs.db
+Desktop.ini
+
+# Ignore all backup files
+*~
+*.bak
+
+# Ignore all minified files
+*.min.*
+
+# Ignore all compiled files
+*.out
+*.exe
+*.dll
+*.class
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore all archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore all images (if not needed)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Ignore all PDFs
+*.pdf
+
+# Ignore all markdown files (if not needed)
+*.md
