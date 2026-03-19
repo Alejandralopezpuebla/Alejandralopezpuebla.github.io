@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En construcción</title>
+    <title>En desconstrucción</title>
     <style>
         body {
             display: flex;
@@ -28,6 +28,46 @@
             position: absolute;
             top: 2rem;
             right: 2rem;
+        }
+        .bottom-menu {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0.5rem 0;
+            z-index: 10;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+            background: #fff;
+            min-width: 200px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            padding: 1rem;
+            z-index: 20;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-btn {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #333;
+            padding: 0.5rem 1rem;
         }
     </style>
 </head>
@@ -56,14 +96,27 @@
                 </g>
             </svg>
         </span>
-        <span id="msg-text">Esta página está en construcción.</span>
+        <span id="msg-text">Esta página está en desconstrucción.</span>
     </div>
-</body>
+    <div class="bottom-menu">
+        <div class="dropdown">
+            <button class="dropdown-btn">Sobre Alejandra Lopez Puebla</button>
+            <div class="dropdown-content">
+                <p>Información sobre Alejandra Lopez Puebla.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Trabajos</button>
+            <div class="dropdown-content">
+                <p>Lista de trabajos o proyectos.</p>
+            </div>
+        </div>
+    </div>
     <script>
         const messages = {
-            es: "Esta página está en construcción.",
-            en: "This site is under construction.",
-            ar: "هذا الموقع تحت الإنشاء.",
+            es: "Esta página está en desconstrucción.",
+            en: "This site is under deconstruction.",
+            ar: "هذا الموقع تحت التفكيك.",
             mp: "Tañi ruka kimün mew müley."
         };
         function changeLang() {
@@ -71,6 +124,5 @@
             document.getElementById('msg-text').textContent = messages[lang];
         }
     </script>
-</body>
 </body>
 </html>
