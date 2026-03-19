@@ -91,14 +91,6 @@
     </style>
 </head>
 <body>
-    <div class="lang-select">
-        <select id="lang" onchange="changeLang()">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="ar">العربية</option>
-            <option value="mp">Mapuzungun</option>
-        </select>
-    </div>
     <div class="bio">
         <p class="name">Alejandra López Puebla</p>
         <p class="bio-text">Periodista (Universidad de La Serena, Chile), especializada en Investigación y Guión de Cine Documental en Argentina (ENERC y Guionarte), Realización de Documentales en Cuba (EICTV) y Teoría y Práctica del Documental Creativo en España (Universidad Autónoma de Barcelona). En las artes en vivo se formó en Dramaturgia en Argentina (Enerc, Arjé) y en Escena y Tecnología Digital en España (Institut del Teatre de Barcelona). Es una de las fundadoras de la Organización Sin Fines de Lucro "Colectiva Varias", que articula a las Mujeres y Disidencias Audiovisuales de la Región de Coquimbo, Chile. También es una de las directoras de la Compañía de Teatro "Didascalia y Viceversa", con la cual ha circulado en Chile, Argentina y Uruguay. Sus trabajos de cine, teatro y videoinstalación exploran las intersecciones entre lo social y lo íntimo desde los espacios que separan y unen el cine/teatro y lo analógico/digital. Ha sido seleccionada en instancias nacionales e internacionales, destacando Aricadoc, Vórtice, BoliviaLab, Femcine, Documenta Sur, Conecta, Arca, Cine en el Borde de la Corporación Chilena de Video y Artes electrónicas, Docsbarcelona, Doxs!, IDFA, entre otros. Actualmente se encuentra trabajando en la video instalación "Milanka" y en los documentales "Anaís" y "La Reja Abierta".</p>
@@ -182,16 +174,7 @@ Docencia:<br>
         </div>
     </div>
     <script>
-        const messages = {
-            es: "Esta página está en desconstrucción.",
-            en: "This site is under deconstruction.",
-            ar: "هذا الموقع تحت التفكيك.",
-            mp: "Tañi ruka kimün mew müley."
-        };
-        function changeLang() {
-            const lang = document.getElementById('lang').value;
-            document.getElementById('msg-text').textContent = messages[lang];
-        }
+        // No scripts needed
     </script>
 </body>
 </html>
