@@ -15,8 +15,6 @@
 # macOS Disk images
 *.dmg
 
-
-
 # Node modules (if using JS/TS)
 node_modules/
 
@@ -56,16 +54,6 @@ Desktop.ini
 *.tar.gz
 *.rar
 *.7z
-
-# Ignore all images (if not needed)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-
-# Ignore all PDFs
-*.pdf
 
 # Ignore all markdown files (if not needed)
 *.md
