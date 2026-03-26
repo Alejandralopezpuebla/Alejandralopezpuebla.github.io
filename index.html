@@ -161,7 +161,22 @@ Docencia:<br>
     </div>
     <img class="photo" src="img/1_JPG.JPG" alt="Alejandra López Puebla">
     <script>
-        // No scripts needed
+        // Hide photo when scrolling
+        const photo = document.querySelector('.photo');
+        let scrollTimeout;
+        
+        window.addEventListener('scroll', () => {
+            photo.style.opacity = '0';
+            photo.style.pointerEvents = 'none';
+            
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                if (window.scrollY === 0) {
+                    photo.style.opacity = '1';
+                    photo.style.pointerEvents = 'auto';
+                }
+            }, 300);
+        });
     </script>
 </body>
 </html>
